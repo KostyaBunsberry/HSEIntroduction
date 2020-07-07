@@ -1,24 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Dj-DH-hsl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Data View Controller-->
+        <scene sceneID="EPF-go-Xwd">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController storyboardIdentifier="DataViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="EIh-5C-WfA" customClass="DataViewController" customModule="HSEIntroduction" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="pageView" id="ye4-aW-jvp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Представлюсь!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pSV-JU-tgh">
+                                <rect key="frame" x="20" y="433.5" width="374" height="29"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Да, еще раз, но я люблю говорить о себе, так что потерпите) Меня зовут Костя, я жуткий гик и просто плохой человек ¯\_(ツ)_/¯" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOg-vE-NHU">
+                                <rect key="frame" x="20" y="477.5" width="374" height="86"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oFe-E3-jV1">
+                                <rect key="frame" x="103.5" y="206.5" width="207" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oFe-E3-jV1" secondAttribute="height" multiplier="1:1" id="NrZ-qV-NHT"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5yb-yL-h1h"/>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="pageView"/>
+                        <constraints>
+                            <constraint firstItem="oFe-E3-jV1" firstAttribute="width" secondItem="ye4-aW-jvp" secondAttribute="width" multiplier="0.5" id="3K2-SB-T3W"/>
+                            <constraint firstItem="xOg-vE-NHU" firstAttribute="top" secondItem="pSV-JU-tgh" secondAttribute="bottom" constant="15" id="KYZ-xK-ho5"/>
+                            <constraint firstItem="5yb-yL-h1h" firstAttribute="trailing" secondItem="pSV-JU-tgh" secondAttribute="trailing" constant="20" id="LGo-om-gja"/>
+                            <constraint firstItem="oFe-E3-jV1" firstAttribute="centerX" secondItem="ye4-aW-jvp" secondAttribute="centerX" id="WEF-nD-u3V"/>
+                            <constraint firstItem="pSV-JU-tgh" firstAttribute="leading" secondItem="5yb-yL-h1h" secondAttribute="leading" constant="20" id="WPG-k0-xJa"/>
+                            <constraint firstItem="pSV-JU-tgh" firstAttribute="centerY" secondItem="ye4-aW-jvp" secondAttribute="centerY" id="ZVU-qL-F0G"/>
+                            <constraint firstItem="xOg-vE-NHU" firstAttribute="leading" secondItem="5yb-yL-h1h" secondAttribute="leading" constant="20" id="ciq-bw-Ud6"/>
+                            <constraint firstItem="5yb-yL-h1h" firstAttribute="trailing" secondItem="xOg-vE-NHU" secondAttribute="trailing" constant="20" id="nbS-p0-cET"/>
+                            <constraint firstItem="pSV-JU-tgh" firstAttribute="top" secondItem="oFe-E3-jV1" secondAttribute="bottom" constant="20" id="tE9-rW-Xd5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="xOg-vE-NHU" id="zDV-Sq-YPl"/>
+                        <outlet property="emojiImageView" destination="oFe-E3-jV1" id="Y1U-gf-9hd"/>
+                        <outlet property="headlineLabel" destination="pSV-JU-tgh" id="hnP-Zl-Wvx"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VKt-a4-Ddi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1320.289855072464" y="733.92857142857144"/>
+        </scene>
+        <!--Introduction Page View Controller-->
+        <scene sceneID="Syy-ZX-oiM">
+            <objects>
+                <pageViewController storyboardIdentifier="IntroductionPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="9Dj-DH-hsl" customClass="IntroductionPageViewController" customModule="HSEIntroduction" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KN6-5t-VCb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2106" y="734"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
