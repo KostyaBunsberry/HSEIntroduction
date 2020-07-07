@@ -26,8 +26,8 @@ class IntroductionPageViewController: UIPageViewController {
         
         self.view.backgroundColor = UIColor.secondarySystemGroupedBackground
         
-        appearance.pageIndicatorTintColor = UIColor.gray
-        appearance.currentPageIndicatorTintColor = UIColor.black
+        appearance.pageIndicatorTintColor = UIColor.secondaryLabel
+        appearance.currentPageIndicatorTintColor = UIColor.label
 
         self.dataSource = self
         self.delegate = self
