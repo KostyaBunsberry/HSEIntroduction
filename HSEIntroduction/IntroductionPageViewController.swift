@@ -10,11 +10,10 @@ import UIKit
 class IntroductionPageViewController: UIPageViewController {
     
     let pagesData: [PageStruct] = [
-        PageStruct(imageName: "hello", headlineText: "Представлюсь!", descriptionText: "Да, еще раз, но я люблю говорить о себе, так что потерпите) Меня зовут Костя, я жуткий гик и просто плохой человек ¯|_(ツ)_|¯" ),
-        PageStruct(imageName: "clown", headlineText: "Также я немного клоун", descriptionText: "Как вы уже заметили по несмешным шуткам и неуместному сарказму. Будьте к этому готовы!"),
-        PageStruct(imageName: "seriosly", headlineText: "Ну, а если сириосли?", descriptionText: "Оценивать свои навыки кодинга я не осмелюсь, но скажу, что я уделяю много внимания таким вещам как дизайн и UX."),
-        PageStruct(imageName: "accents", headlineText: "Расстановка акцентов", descriptionText: "Как я и сказал, не всегда важно что, зачастую главное как. Так что буду рад продумывать до мельчайших деталей вашу идею, если она мне понравится конечно ;)"),
-        PageStruct(imageName: "contactme", headlineText: "Хочешь со мной работать?", descriptionText: "Тогда пиши в телегу: @KostyaBunsberry ...Ну или просто так пиши, все равно отвечу :)")
+        PageStruct(imageName: "hello", headlineText: "Кто я такой?", descriptionText: "Зовут меня Костя, занимаюсь iOS разработкой уже почти 2 года, раньше делал сайты и андроид приложухи." ),
+        PageStruct(imageName: "seriosly", headlineText: "Что я делал?", descriptionText: "В целом не так много, победил в номинации 'Прикольная фича' на прошлой летней школе ВШЭ с приложением Dream Price и для изучения Swift прогал всякую мелочь."),
+        PageStruct(imageName: "accents", headlineText: "Что я люблю?", descriptionText: "Больше всего себя конечно, но вообще не могу жить без сочного дизайна и продуманного user experience'а в приложениях."),
+        PageStruct(imageName: "contactme", headlineText: "Что посоветую?", descriptionText: "Чекай мой гитхаб и пиши в телегу [@KostyaBunsberry] если хочешь поработать со мной или просто так ;)")
     ]
     
     var currentIndex: Int = 0

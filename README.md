@@ -1,2 +1,2 @@
-# HSEIntroduction
-Первое дз 7-ой летней школы ВШЭ
+# VIII HSE Summer School
+Моя телега: [@KostyaBunsberry](https://t.me/KostyaBunsberry)
